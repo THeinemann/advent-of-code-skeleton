@@ -1,2 +1,10 @@
+
+import Test.HUnit
+
+import TestDay1
+
+allTests :: [Test]
+allTests = [ TestDay1.testCases ]
+
 main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+main = runTestTT (TestList allTests) >> pure ()
