@@ -1,4 +1,4 @@
-module Framework where
+module Framework(Solver, Solution, solutionBy, solutionByFull, tbd) where
 
 type Solver = FilePath -> IO ()
 
